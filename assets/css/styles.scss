@@ -1,0 +1,95 @@
+---
+# for jekyll
+---
+@import 'Colour';
+@import 'typography';
+
+body{
+    font-family: $ff-ss;
+    display: grid;
+    grid-template-columns: 
+    1fr [container-start]
+    repeat(6, minmax(50px,150pix)) 
+    [container-end] 1fr;
+    background: $clr-white;
+    color: $clr-black;
+    text-align: justify;
+    margin: 0;
+}
+.title-area{
+    background: $clr-red;
+    color: $clr-white;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / 9;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.post_text{
+    grid-column: 2 / 6;
+    text-align:justify;
+    margin: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.post__description{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1em;
+}
+.blog-title{
+    font-family: $ff-s;
+    font-size: 1em;
+    color: $clr-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity ease-out 200ms;
+
+    &:hover{
+        opacity: 0.4;
+    }
+}
+.blog__link{
+    display: inline-block;
+    font-family: $ff-ss;
+    padding: 10px;
+    color: $clr-white;
+    text-decoration: none;
+    background: linear-gradient(45deg,$clr-blue,black);
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    &:hover{
+        transition: background ease-out 200ms;
+        background: linear-gradient(purple,purple);
+    }
+}
+footer{
+    display: grid;
+    background: $clr-red;
+    color: $clr-white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    grid-column: 1 / 9;
+    margin-bottom: 0;
+}
+.pfoot{
+    text-align: center;
+    grid-column: 1 / 9;
+}
+.myposts{
+    background: $clr-red;
+    grid-column: 1/2;
+    color: $clr-white;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.opening{
+
+    grid-column: 4/8;
+    object-fit: cover;
+}

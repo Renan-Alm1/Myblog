@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name ="viewport" content =" width = device-width, initial-scale =1.0">
+<title> {{ page.title }} </title>
+<link rel ="stylesheet" href = {{ "/assets/css/styles.css" | relative_url}}>
+</head >
+<body >
+<div class = "title-area">
+    <img src = {{ "assets/images/sample-logo.jpg" | relative_url }} class = "logo">   
+    <h1 class = "title">{{page.title}}</h1>
+    <p class = "sub-title">{{ page.description }}</p>
+</div>
+
+{{content}}
+
+<footer>
+    <p>Be welcomed, we're still under construction.</p>
+</footer>
+</body>
+</html>

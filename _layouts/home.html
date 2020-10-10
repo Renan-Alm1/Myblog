@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<ul class = "myposts">
+ <header>  
+     <img src= "{{ assets\images\sample-logo.jpg | relative_url }}" class = "logo"> 
+</header>
+ {% for post in site.posts %}
+ <li> <a class = "blog-title" href ="{{ post.url|relative_url}} "> {{ post.title}}</a>
+<p class = "post__description" >
+    {{ post.description }}
+</p>
+<a class = "blog__link"href = "{{ post.url|relative_url}}">Read More</a> 
+</li>
+ {% endfor %}
+</ul >
+<div class = "opening">
+{{content}}
+</div>

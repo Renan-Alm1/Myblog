@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=PT+Sans&display=swap");
+body { font-family: "Noto Sans", sans-serif; display: grid; grid-template-columns: 1fr [container-start] repeat(6, minmax(50px, 150pix)) [container-end] 1fr; background: white; color: black; text-align: justify; margin: 0; }
+
+.title-area { background: red; color: white; text-align: center; padding: 10px; grid-column: 1 / 9; }
+
+.title { text-transform: uppercase; font-size: 2rem; }
+
+.post_text { grid-column: 2 / 6; text-align: justify; margin: 5px; margin-top: 10px; padding: 10px; }
+
+.post__description { margin: 0; margin-top: 10px; font-size: 1em; }
+
+.blog-title { font-family: "PT Sans", sans-serif; font-size: 1em; color: white; text-transform: uppercase; text-decoration: none; transition: opacity ease-out 200ms; }
+
+.blog-title:hover { opacity: 0.4; }
+
+.blog__link { display: inline-block; font-family: "Noto Sans", sans-serif; padding: 10px; color: white; text-decoration: none; background: linear-gradient(45deg, #0909f3, black); margin-top: 10px; margin-bottom: 20px; }
+
+.blog__link:hover { transition: background ease-out 200ms; background: linear-gradient(purple, purple); }
+
+footer { display: grid; background: red; color: white; text-align: center; padding: 10px; margin-top: 50px; grid-column: 1 / 9; margin-bottom: 0; }
+
+.pfoot { text-align: center; grid-column: 1 / 9; }
+
+.myposts { background: red; grid-column: 1/2; color: white; margin: 5px; margin-top: 20px; padding: 10px; }
+
+.opening { grid-column: 4/8; object-fit: cover; }
+
+/*# sourceMappingURL=styles.css.map */
